@@ -3,24 +3,24 @@ With AI voice on the rise, this starter code's goal is to get you set up with a 
 
 ## Setup
 
-git clone repo
-cd into repo
-copy .env.example file to a .env.local file with this command: cp .env.example .env.local
+git clone repo  
+cd into repo  
+copy .env.example file to a .env.local file with this command: cp .env.example .env.local  
 
 
 ### Create Conda environment
-conda create -n myenv python=3.11
-conda activate myenv
+conda create -n myenv python=3.11  
+conda activate myenv  
 
 ### Install dependencies
-pip install -r requirements.txt
+pip install -r requirements.txt  
 
 
 ### NGROK
-brew install --cask ngrok
+brew install --cask ngrok  
 
-In a separate terminal, run: ngrok http 127.0.0.1:5000
-Leave for now as you will need info in this terminal window later.
+In a separate terminal, run: ngrok http 127.0.0.1:5000  
+Leave window for now as you will need info in this terminal window later.  
 
 ### OpenAI
 1. Go to platform.openai.com and signup or login
