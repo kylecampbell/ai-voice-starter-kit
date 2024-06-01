@@ -1,4 +1,4 @@
-# AI Voice Starter
+# AI Voice Starter Kit
 With AI voice on the rise, this starter code's goal is to get you set up with a python project using OpenAI to answer calls and text messages on a phone number that you obtain from Twilio and provide to your AI agent. Keep in mind this project serves as a stepping stone rather than a finished project, it highlights the potential of integrating AI with a phone number as a medium of communication. There are a lot of paths you can take from here to make a more interesting AI voice agent, such as using a better voice model than Twilio's built in `TwiML Voice <Say>`. Enjoy!
 
 ## Setup
