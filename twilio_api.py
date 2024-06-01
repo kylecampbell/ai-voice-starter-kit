@@ -2,7 +2,7 @@ import os
 from flask import Flask, request
 from twilio.twiml.voice_response import VoiceResponse, Gather
 from twilio.twiml.messaging_response import MessagingResponse
-from get_open_ai import get_gpt_response
+from open_ai import get_gpt_response
 
 app = Flask(__name__)
 
@@ -28,7 +28,7 @@ def answer_call():
         resp.say("Hey hey, what's up?", voice='alice')
 
     # Collect further speech input
-    gather = Gather(input='speech', action='/answer', speech_timeout='auto', hints=["yes", "no", "please", "thank you"])
+    gather = Gather(input='speech', action='/voice', speech_timeout='auto', hints=["yes", "no", "please", "thank you"])
     resp.append(gather)
 
     # If no input was received within the timeout, end the call
